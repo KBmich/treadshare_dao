@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "treadshare_dao_backend": {
+      "main": "src/treadshare_dao_backend/main.mo",
+      "type": "motoko"
+    },
+    "treadshare_dao_frontend": {
+      "dependencies": [
+        "treadshare_dao_backend"
+      ],
+      "source": [
+        "src/treadshare_dao_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "treadshare_dao_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
